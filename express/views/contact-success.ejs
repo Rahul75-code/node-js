@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contact page</title>
+    <link href = "/css/main.css" rel="stylesheet" type="text/css">
+    <style>
+            body{background: rgb(45, 230, 57); font-family: verdana; color:#fff; padding: 30px;}
+    </style>
+</head>
+<body>
+     <% include partial/nav.ejs %>
+    <h1>welcome , this is a contect page</h1>
+    <h2> .. Contact Us</h2>
+    <p>thanks for getting in touch !</p>
+    <p> You contacted to<strong> <%= data.who %> </strong>in the <%= data.department %> department. </p>
+    <p>We will reply to you at : <%= data.Email %></p>
+    
+</body>
+</html>
